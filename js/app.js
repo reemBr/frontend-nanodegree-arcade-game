@@ -1,8 +1,7 @@
 // Enemies our player must avoid
 var Enemy = function ()
 {
-	// Variables applied to each of our instances go here,
-	// we've provided one for you to get started
+
 	this.x = 0;
 	let initialY = [ 430, 330, 230, 130, 30 ];
 	this.y = initialY[ Math.floor( Math.random() * 4 ) + 0 ]; //randomly assign enemy on row
@@ -31,14 +30,13 @@ Enemy.prototype.render = function ()
 	ctx.drawImage( Resources.get( this.sprite ), this.x, this.y );
 };
 
-// Now write your own player class
-// This class requires an update(), render() and
+// player class
+// This class requires a render() and
 // a handleInput() method.
 
 var Player = function ()
 {
-	// Variables applied to each of our instances go here,
-	// we've provided one for you to get started
+
 	this.x = 200;
 	this.y = 430;
 	// The image/sprite for our enemies, this uses
@@ -93,16 +91,16 @@ Player.prototype.handleInput = function ( key )
 
 }
 
-// Draw the enemy on the screen, required method for game
+// Draw the player on the screen, required method for game
 Player.prototype.render = function ()
 {
 	ctx.drawImage( Resources.get( this.sprite ), this.x, this.y );
 };
-// Now instantiate your objects.
+// instantiate objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 let allEnemies = [];
-//init enemy
+//init first enemy
 let e = new Enemy();
 allEnemies.push( e );
 //every second and a half create new enemies 
