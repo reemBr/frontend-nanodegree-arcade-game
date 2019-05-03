@@ -3,7 +3,7 @@ var Enemy = function ()
 {
 
 	this.x = 0;
-	let initialY = [ 430, 330, 230, 130, 30 ];
+	let initialY = [ 430, 330, 230, 130, 30 ];//rows in canvas
 	this.y = initialY[ Math.floor( Math.random() * 4 ) + 0 ]; //randomly assign enemy on row
 	// The image/sprite for our enemies, this uses
 	// a helper we've provided to easily load images
