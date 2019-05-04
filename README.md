@@ -7,12 +7,13 @@
 
 ## Instructions
 
-The game starts automaticly and the player is placed down in the middle.
+* The game starts automaticly and the player is placed down in the middle.
 You can use arrow keys to move up,down,righ and left.
 The speed of the bug is random.
 You win when you reach water withot touching any bug.
 If you touch any bug you will be returned to the start.
 Enjoy the game :).
+* You can load the game by opening index.html
 
 ## Contributing
 
